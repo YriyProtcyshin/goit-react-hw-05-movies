@@ -1,0 +1,17 @@
+.reviews_list{
+    display: flex;
+    flex-direction: column;
+}
+.reviews_item{
+    display: flex;
+}
+.review_author{
+    width: 20%;
+    border: 1px solid #eee;
+}
+.review_content{
+    border: 1px solid #eee;
+    width: 80%;
+    padding: 16px;
+}
+

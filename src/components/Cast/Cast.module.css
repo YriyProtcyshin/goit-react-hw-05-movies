@@ -1,0 +1,24 @@
+.cast_list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.cast_item{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 140px;
+}
+.cast_image {
+    border:1px solid #eee;
+    height: 210px;
+}
+.cast_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
