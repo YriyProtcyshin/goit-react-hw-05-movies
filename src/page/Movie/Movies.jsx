@@ -13,8 +13,7 @@ const Movie = () => {
     const query = searchParam.get('query') ?? ""
     
     const [input, setInput] = useState(query)
-    const [films, setFilms] = useState([])
-    
+    const [films, setFilms] = useState([])    
 
     const changeFilter = (e) => {
         e.preventDefault()

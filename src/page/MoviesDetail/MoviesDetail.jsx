@@ -15,17 +15,20 @@ const MoviesDetail = () => {
 
     const param = useParams() 
     
-    useEffect(() => {
+    useEffect(() => {        
         getMovieDetail(param.id).then(setMovieDetail)
     }, [param.id])
+
+    if (movieDetail.length === 0) {
+        return (
+            <div>something wrong  (:</div>
+        )
+    }
     
-    const linkImage = `https://image.tmdb.org/t/p/w500/${movieDetail['poster_path']}`
-    
+    const linkImage = `https://image.tmdb.org/t/p/w500/${movieDetail['poster_path']}`     
     const userScore = Math.round(Number(movieDetail['vote_average']) * 10)
    
-    if (movieDetail.length === 0) {
-        return
-    }
+    
 
     return (
         <>           

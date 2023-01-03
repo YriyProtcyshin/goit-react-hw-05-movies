@@ -19,8 +19,8 @@ export const getMovieDetail = (movie_id) => {
         .then(function (response) {
             return response.data;
         })
-        .catch(function (error) {
-            console.log(error);
+        .catch(function (error) {            
+            return [];
         });
 }
 
